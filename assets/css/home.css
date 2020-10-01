@@ -1,0 +1,57 @@
+.home-container {
+    width: 100%;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: auto;
+    gap: 1rem 1rem;
+    grid-template-areas: 
+    "slogan gallery01 gallery02 slack"
+    "meetup meetup past-meetups slack"
+    "video video careers careers"
+    "video video patreon recommendations";
+}
+.home-block {
+    width: 100%;
+    min-height: 35vh;
+    background-color: #000;
+}
+.home-block.slogan {
+    grid-area: slogan;
+    background-color: #260D4F;
+}
+.home-block.gallery01 {
+    grid-area: gallery01;
+}
+.home-block.gallery02 {
+    grid-area: gallery02;
+}
+.home-block.slack {
+    grid-area: slack;
+    background-color: #41228F;
+}
+.home-block.meetup {
+    grid-area: meetup;
+    background-color: #CE0035;
+}
+.home-block.past-meetups {
+    grid-area: past-meetups;
+    background-color: #0FCCC8;
+}
+.home-block.video {
+    grid-area: video;
+    background-color: #260D4F;
+}
+.home-block.careers {
+    grid-area: careers;
+    background-color: #007AFF;
+}
+.home-block.patreon {
+    grid-area: patreon;
+    background-color: #0A0A0A;
+}
+.home-block.recommendations {
+    grid-area: recommendations;
+    background: linear-gradient(#F5F2F2, #C1BFBF);
+}
+
